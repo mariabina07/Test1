@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  test1
 //
 //  Created by MariaBina07 on 7/10/15.
@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
--(IBAction)showMessage;
--(IBAction)changeColor:(id)sender;
 
 @end
-
