@@ -17,11 +17,13 @@
 @synthesize detailPhoto = _detailPhoto;
 @synthesize detailTitleLabel = _detailTitleLabel;
 @synthesize detailString = _detailString;
+@synthesize fotoUrl = _fotoUrl;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _detailTitleLabel.text = _detailString;
+    _detailPhoto.image = [UIImage imageNamed:_fotoUrl];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +35,7 @@
 {
     _detailString = detailString;
     _detailTitleLabel.text = detailString;
+    _detailPhoto.image = [UIImage imageNamed:_fotoUrl];
 }
 
 /*

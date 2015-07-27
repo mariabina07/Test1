@@ -64,7 +64,8 @@
     NSString *storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     CellDetailViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"CellDetailView"];
-    vc.detailString = @"asdasdasda";
+    vc.detailString = [NSString stringWithFormat:@"%@", [tableData objectAtIndex:indexPath.row]];
+    vc.fotoUrl = [thumbnails objectAtIndex:indexPath.row];
     
     [self presentViewController:vc animated:YES completion:nil];
 }
